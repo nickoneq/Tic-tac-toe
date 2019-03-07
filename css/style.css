@@ -1,0 +1,91 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.game-title {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.game {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 152px;
+	margin: 0 auto 50px;
+	border: 1px solid #000;
+}
+
+.game-item {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	border: 1px solid #000;
+	cursor: pointer;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all linear .3s;
+}
+
+.game-item:hover {
+	background-color: #ccc;
+}
+
+#reset-game {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #000;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: all linear .3s;
+}
+
+#reset-game:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.x {
+	background-color: #ff9999;
+}
+
+.o {
+	background-color: #abfdab;
+}
